@@ -48,8 +48,8 @@ if __name__ == '__main__':
             break
         lista = check_words(dictionary,stringa)
         searchAgain = ""
-        if len(lista)>20:
-            searchAgain = str(raw_input("Found more than 20 word, search again? Y/n: "))
+        if len(lista)>1:
+            searchAgain = str(raw_input("Found " + str(len(lista)) + " word, search again? Y/n: "))
             if searchAgain == "":
                 searchAgain = "y"
         clear()
