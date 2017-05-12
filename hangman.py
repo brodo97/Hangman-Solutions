@@ -11,10 +11,10 @@ def check_words(lista,stringa):
                     count += 1
                 else:
                     if lettera in "aeiou":
-                        if not parola[x] == "+" and stringa[x] == "+":
+                        if stringa[x] == "+":
                             count += 1
                     else:
-                        if not parola[x] == "-" and stringa[x] == "-":
+                        if stringa[x] == "-":
                             count += 1
         if count == len(parola):
             nuovaLista.append(parola)
