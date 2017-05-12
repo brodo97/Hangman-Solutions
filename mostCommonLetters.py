@@ -16,7 +16,6 @@ if __name__ == '__main__':
             letters[char] += 1
 
     tot = sum(letters.values())
-    hz = 0
     for i in sorted(letters, key=letters.get, reverse=True):
         print '{0:>1} {1:>6} {2:>1} {3:>8}'.format(i, letters[i],":",str(letters[i]/(tot/100.))[:8]+"%")
     print ""
